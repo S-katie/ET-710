@@ -1,11 +1,20 @@
+<<<<<<< HEAD
 git config user.name  ""          
 git config user.email "" => sync
 
 
+=======
+git config user.name "S-katie"
+git config user.email "soe.kaythi..." => sync changes
+>>>>>>> 44f6a19 (lab3)
 
 
 
 target="_blank" => open the link in a new tab
 area shape = rectangle => coords="40,10,200,300" => x1y1 (coordinates)
+<<<<<<< HEAD
 rea shape = round => coords="40,10,100" => x1y1 + radius (coordinates)
 
+=======
+area shape = round => coords="40,10,100" => x1y1 + radius (coordinates)
+>>>>>>> 44f6a19 (lab3)
