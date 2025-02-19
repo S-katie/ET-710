@@ -1,0 +1,70 @@
+.header liquidheader{
+
+
+}
+
+.navlinks liquidnav{
+    
+}
+
+
+.cardcontainer{
+
+
+}
+
+
+
+
+.cardfooterlink{
+    text-align: center;
+    display: block;
+    background-color: black;
+    color: aqua;
+    padding: 1em;
+}
+
+.card:hover .cardfooterlink{
+    background-color: red;
+    font-size: 1.1em;
+}
+
+.verticaltabs{
+    list-style: none;
+}
+
+.verticaltabs li a{
+    display: block;
+    background-color: violet;
+    width: 30%;
+    color: azure;
+    padding: 1em;
+    text-decoration: none;
+}
+
+.verticaltabs li a:hover{
+    background-color: aquamarine;
+    color: darkblue;
+
+}
+
+.horizontaltabs{
+    background-color: blueviolet;
+    color: aliceblue;
+
+}
+
+.horizontaltabs a{
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    color: whitesmoke;
+    padding: 1em;
+    text-decoration: none;
+}
+
+.horizontaltabs:hover{
+    background-color: bisque;
+    color: brown;
+
+}
