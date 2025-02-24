@@ -55,3 +55,37 @@ img{width: 100%; display: block;}
 .mesh3{
     background-image: linear-gradient(to top left,red,blue);
 }
+.heroinfo{
+    position: absolute;
+    top: 30%;
+    bottom: 30%;
+    left: 20%;
+    right: 20%;
+    text-align: center;
+    border: solid 1px gray;
+}
+/*.heroimage{
+    background-image: ;
+    background-size: ;
+}*/
+.heroinfo a:hover{
+    background-color: red;
+}
+.sepia1{
+    filter: sepia(10%);
+}
+.sepia2{
+    filter: sepia(60%);
+}
+.sepia3{
+    filter: sepia(100%);
+}
+.blur1{
+    filter: blur(2px);
+}
+.blur2{
+    filter: blur(10px);
+}
+.blur3{
+    filter: blur(20px);
+}
