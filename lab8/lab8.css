@@ -1,0 +1,60 @@
+.rgb1{
+
+}
+
+
+.hex1{
+    background-color: #ad1457;
+}
+.hex2{
+    background-color: #78002e;
+}
+.hex3{
+    background-color: #10ab88;
+}
+img{width: 100%; display: block;}
+.imgcontatiner{
+    width: 60%;
+    margin: 1em auto;
+    box-shadow: 1px 1px 5px gray;
+    position: relative;
+}
+.imgtitle{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    right: 20%;
+    background-color: rgb(242,80,30);
+    text-align: center;
+    font-size: 2em;
+    padding: 1em;
+}
+.topnav{
+    background-color: #78002e;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+} 
+.topnav a{
+    display: inline-block;
+    padding: 1em 3em;
+    color: whitesmoke;
+    text-decoration: none;
+}
+.topnav a:hover{
+    background-color: aliceblue;
+    color: #78002e;
+}
+.mesh1,.mesh2,.mesh3{
+    width: 60%;
+    height: 200px;
+}
+.mesh1{
+    background-image: linear-gradient(#78002e,#10ab88);
+}
+.mesh2{
+    background-image: linear-gradient(to right,#78002e,#10ab88);
+}
+.mesh3{
+    background-image: linear-gradient(to top left,red,blue);
+}
