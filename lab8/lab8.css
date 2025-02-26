@@ -104,10 +104,62 @@ img{width: 100%; display: block;}
     height: auto;
     border: solid red 1px;
 }
-.container1, .container2, .container{
-    width: 500px;
+.container1, .container2, .container3{
+    width: 400px;
     height: 600px;
     border: solid blue 1px;
     display: inline-block;
     margin: 2em;
+    position: relative;
+}
+.invertimage {
+    filter: invert(90%);
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.caption1 {
+    position: absolute;
+    bottom: 10%;
+    
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    font-size: 20px;  /* Font size */
+    text-align: center;
+    padding: 10px;
+    border-top: 3px solid #fff; /* White border at the top */
+}
+.blurimage {
+    filter: blur(20px);
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.caption2 {
+    position: absolute;
+    bottom: 10%;
+    
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    font-size: 20px;  /* Font size */
+    text-align: center;
+    padding: 10px;
+    border-top: 3px solid #fff; /* White border at the top */
+}
+.gradientimage {
+    background-image:linear-gradient(to right);
+}
+.caption3 {
+    position: absolute;
+    bottom: 10%;
+    
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    font-size: 20px;  /* Font size */
+    text-align: center;
+    padding: 10px;
+    border-top: 3px solid #fff; /* White border at the top */
 }
