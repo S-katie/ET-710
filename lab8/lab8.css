@@ -89,3 +89,25 @@ img{width: 100%; display: block;}
 .blur3{
     filter: blur(20px);
 }
+.invert1{
+    filter: invert(2%);
+}
+.invert2{
+    filter: invert(60%);
+}
+.invert3{
+    filter: invert(100%);
+}
+
+/* Exercise */
+.sectioncontainer{
+    height: auto;
+    border: solid red 1px;
+}
+.container1, .container2, .container{
+    width: 500px;
+    height: 600px;
+    border: solid blue 1px;
+    display: inline-block;
+    margin: 2em;
+}
