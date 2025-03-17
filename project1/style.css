@@ -111,3 +111,15 @@ a {
 a:hover {
     text-decoration: underline;
 }
+.card button {
+    background: #2a9d8f;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background: burlywood;
+}
