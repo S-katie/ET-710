@@ -6,21 +6,32 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color:white;
     color: #333;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #2a699d;
+    background-image: url('images/sand.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 400px; 
     color: white;
     text-align: center;
-    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+header h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 4.5em;
+    font-weight: bolder;
+    font-style: italic;
 }
 
 nav {
-    background-color: #264653;
+    background-color: white;
     padding: 10px 0;
 }
 
@@ -28,7 +39,8 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    text-align: center;
+    text-align: right;
+    
 }
 
 nav ul li {
@@ -37,13 +49,15 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #2a9d8f;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: bolder;
+    font-size: 1.2em;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    text-decoration:none;
+    color:  burlywood;
 }
 
 section {
@@ -54,7 +68,14 @@ section {
 .history, .attractions, .contact {
     margin-bottom: 40px;
 }
-
+card{
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 200px;
+}
 h2 {
     color: #264653;
     margin-bottom: 10px;
@@ -73,7 +94,8 @@ footer {
 }
 
 .gallery-container {
-    display: grid;
+    display: flex;
+    gap: 20px;
 }
 
 .gallery-container img {
