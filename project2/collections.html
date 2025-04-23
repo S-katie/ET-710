@@ -10,20 +10,20 @@
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="#">Kay Jewelers</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="collections.html">Collections</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-      </ul>
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Kay Jewelers</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="collections.html">Collections</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
 </nav>
 
 <!--Header-->
@@ -60,19 +60,42 @@
   </div>
 </div>
 
-
-<!--Card-->
+<!-- Product Cards -->
 <div class="container mt-5">
-  <div class="card text-center border-0 shadow-lg">
-    <img src="images/jewel1.jpg" class="card-img-top" alt="Homepage Banner">
-    <div class="card-body">
-      <h3 class="card-title fw-bold">Welcome to Kay Jewelers</h3>
-      <p class="card-text lead">Discover timeless beauty with our handcrafted fine jewelry — designed to dazzle, made to last.</p>
-      <a href="collections.html" class="btn btn-primary btn-lg mt-2">Shop Now</a>
+  <h2 class="text-center mb-4">Featured Jewelry</h2>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="images/earrings1.jpg" class="card-img-top" alt="Pearl Earrings">
+        <div class="card-body">
+          <h5 class="card-title">Pearl Earrings</h5>
+          <p class="card-text">Elegant south sea pearl with Floral Gold.</p>
+          <a href="#" class="btn btn-dark">View Details</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="images/necklace1.jpg" class="card-img-top" alt="Gold Necklace">
+        <div class="card-body">
+          <h5 class="card-title">Gold Necklace</h5>
+          <p class="card-text">14K handcrafted Cuban link chain.</p>
+          <a href="#" class="btn btn-dark">View Details</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="images/bracelet1.jpg" class="card-img-top" alt="Pearl Bracelet">
+        <div class="card-body">
+          <h5 class="card-title">Pearl Bracelet</h5>
+          <p class="card-text">Elegant south sea pearls with 14K Gold.</p>
+          <a href="#" class="btn btn-dark">View Details</a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-
 
 <!-- Footer -->
 <footer class="bg-dark text-white text-center py-4 mt-5">
@@ -85,7 +108,7 @@
   </div>
 </footer>
 
-<!-- Bootstrap Bundle JS -->
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
