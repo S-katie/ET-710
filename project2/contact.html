@@ -18,13 +18,25 @@
     <div class="collapse navbar-collapse" id="navMenu">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="collections.html">Collections</a></li>
+        
+        <!-- Dropdown for Collections -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="collectionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Collections
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="collectionsDropdown">
+            <li><a class="dropdown-item" href="chains.html">Chains/Bracelets</a></li>
+            <li><a class="dropdown-item" href="earrings.html">Earrings</a></li>
+          </ul>
+        </li>
+
         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
       </ul>
     </div>
   </div>
 </nav>
+
 
 <!--Header-->
 <div class="container-fluid bg-dark text-white text-center d-flex align-items-center justify-content-center" style="height: 300px; background:url('images/model1.jpg') center/cover no-repeat;">

@@ -8,6 +8,7 @@
 </head>
 <body>
 
+<!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
     <a class="navbar-brand fw-bold" href="#">Kay Jewelers</a>
@@ -24,8 +25,8 @@
             Collections
           </a>
           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="collectionsDropdown">
-            <li><a class="dropdown-item" href="#">Chains/Bracelets</a></li>
-            <li><a class="dropdown-item" href="#">Earrings</a></li>
+            <li><a class="dropdown-item" href="chains.html">Chains/Bracelets</a></li>
+            <li><a class="dropdown-item" href="earrings.html">Earrings</a></li>
           </ul>
         </li>
 
@@ -35,6 +36,7 @@
     </div>
   </div>
 </nav>
+
 
 
 <!--Header-->
@@ -74,39 +76,137 @@
 <!-- Product Cards -->
 <div class="container mt-5">
   <h2 class="text-center mb-4">Featured Jewelry</h2>
-  <div class="row g-4">
-    <div class="col-md-4">
+  <div class="row row-cols-1 row-cols-md-4 g-4">
+
+    <!-- Product 1 -->
+    <div class="col">
       <div class="card h-100">
-        <img src="images/earrings1.jpg" class="card-img-top" alt="Pearl Earrings">
-        <div class="card-body">
-          <h5 class="card-title">Pearl Earrings</h5>
-          <p class="card-text">Elegant south sea pearl with Floral Gold.</p>
-          <a href="#" class="btn btn-dark">View Details</a>
+        <img src="images/heart_br1a.jpg" class="card-img-top" alt="heart bracelet">
+        <div class="card-body text-center">
+          <h5 class="card-title">Diamond Heart Bracelet</h5>
+          <p class="card-text">14K Gold Double heart shaped bracelet.</p>
+          <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#earringsModal">
+            View Details
+          </button>
         </div>
       </div>
     </div>
-    <div class="col-md-4">
+
+    <!-- Product 2 -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/chain1a.jpg" class="card-img-top" alt="Gold Chains">
+        <img src="images/chain1b.jpg" class="card-img-top" alt="Gold Chains">
+        <img src="images/chain1c.jpg" class="card-img-top" alt="Gold Chains">
+        <div class="card-body text-center">
+          <h5 class="card-title">14K Gold Chains</h5>
+          <p class="card-text">Rope style gold chains 12 inches.</p>
+          <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#chainsModal">
+            View Details
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="col">
       <div class="card h-100">
         <img src="images/necklace1.jpg" class="card-img-top" alt="Gold Necklace">
-        <div class="card-body">
+        <div class="card-body text-center">
           <h5 class="card-title">Gold Necklace</h5>
           <p class="card-text">14K handcrafted Cuban link chain.</p>
-          <a href="#" class="btn btn-dark">View Details</a>
+          <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#necklaceModal">
+            View Details
+          </button>
         </div>
       </div>
     </div>
-    <div class="col-md-4">
+
+    <!-- Product 4 -->
+    <div class="col">
       <div class="card h-100">
         <img src="images/bracelet1.jpg" class="card-img-top" alt="Pearl Bracelet">
-        <div class="card-body">
+        <div class="card-body text-center">
           <h5 class="card-title">Pearl Bracelet</h5>
           <p class="card-text">Elegant south sea pearls with 14K Gold.</p>
-          <a href="#" class="btn btn-dark">View Details</a>
+          <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#braceletModal">
+            View Details
+          </button>
         </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Modals Section -->
+
+<!-- Modal for Bracelet -->
+<div class="modal fade" id="earringsModal" tabindex="-1" aria-labelledby="earringsModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="earringsModalLabel">Diamond Heart Bracelet Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="images/heart_br1a.jpg" class="img-fluid mb-3" alt="heart bracelet">
+        <img src="images/heart_br1b.jpg" class="img-fluid mb-3" alt="heart bracelet">
+        <img src="images/heart_br1c.jpg" class="img-fluid mb-3" alt="heart bracelet">
+        <p>These elegant Heart shaped with SI color diamonds are beautifully set in 14K gold design, perfect for everyday wear and grace.</p>
       </div>
     </div>
   </div>
 </div>
+
+<!-- Modal for Chains -->
+<div class="modal fade" id="chainsModal" tabindex="-1" aria-labelledby="chainsModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="chainsModalLabel">14K Gold Chains Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="images/chain1a.jpg" class="img-fluid mb-3" alt="Gold Chains">
+        <p>Crafted from 14K gold, this 12-inch rope-style chain is a classic symbol of luxury, durability, and modern style.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Necklace -->
+<div class="modal fade" id="necklaceModal" tabindex="-1" aria-labelledby="necklaceModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="necklaceModalLabel">Gold Necklace Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="images/necklace1.jpg" class="img-fluid mb-3" alt="Gold Necklace">
+        <p>Our 14K handcrafted Cuban link gold necklace offers strength and beauty, designed for those who value sophistication and quality.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Bracelet -->
+<div class="modal fade" id="braceletModal" tabindex="-1" aria-labelledby="braceletModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="braceletModalLabel">Pearl Bracelet Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="images/bracelet1.jpg" class="img-fluid mb-3" alt="Pearl Bracelet">
+        <p>This delicate pearl bracelet features south sea pearls and a 14K gold clasp, delivering timeless charm and modern elegance.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <!-- Footer -->
 <footer class="bg-dark text-white text-center py-4 mt-5">
