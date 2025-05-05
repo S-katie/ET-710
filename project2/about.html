@@ -10,20 +10,31 @@
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#">Kay Jewelers</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="collections.html">Collections</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-        </ul>
-      </div>
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Kay Jewelers</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+        
+        <!-- Dropdown for Collections -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="collectionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Collections
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="collectionsDropdown">
+            <li><a class="dropdown-item" href="chains.html">Chains/Bracelets</a></li>
+            <li><a class="dropdown-item" href="earrings.html">Earrings</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+      </ul>
     </div>
+  </div>
 </nav>
 
 <!--Header-->
@@ -63,27 +74,45 @@
 
 <!--Card-->
 <div class="container mt-5">
-  <div class="card text-center border-0 shadow-lg">
-    <img src="images/jewel1.jpg" class="card-img-top" alt="Homepage Banner">
-    <div class="card-body">
-      <h3 class="card-title fw-bold">Welcome to Kay Jewelers</h3>
-      <p class="card-text lead">Discover timeless beauty with our handcrafted fine jewelry — designed to dazzle, made to last.</p>
-      <a href="collections.html" class="btn btn-primary btn-lg mt-2">Shop Now</a>
+  <div class="card border-0 shadow-sm">
+    <div class="row g-0 align-items-center">
+
+      <div class="col-md-6">
+        <img src="images/jewel2.jpg" class="img-fluid w-100" style="height: 100%; object-fit: cover;" alt="Craftsmanship">
+      </div>
+
+      <div class="col-md-6 text-center p-4">
+        <h4 class="card-title fw-bold">Timeless Craftsmanship</h4>
+        <p class="card-text">
+          For over a century, our artisans have shaped gold and gemstones into heirlooms. Every detail is a tribute to tradition and enduring beauty.Every item in our collection is more than an accessory—it’s a story. A proposal whispered over candlelight. A birthday surprise. A mother’s keepsake. With every gem we set and every clasp we fasten, we honor the moments that matter most.
+
+          We believe true luxury lies in care. That’s why we source ethically, craft meticulously, and serve wholeheartedly. Whether you're choosing a symbol of commitment or restoring a beloved treasure, our team is here to guide you with honesty, warmth, and expertise.
+          
+          This is more than a business. It’s a legacy built on trust, tradition, and the belief that jewelry isn’t just worn—it’s felt.
+        </p>
+        <a href="collections.html" class="btn btn-outline-dark">Learn More</a>
+      </div>
+
     </div>
   </div>
 </div>
 
 
-<!-- Footer -->
+
+<!--footer-->
 <footer class="bg-dark text-white text-center py-4 mt-5">
-  <div class="container">
-    <p class="mb-1">&copy; 2025 Kay Jewelers</p>
-    <small>
-      <a href="#" class="text-white text-decoration-none me-3">Soe Kaythi</a>
-      <a href="#" class="text-white text-decoration-none">ET-701, Project 2</a>
-    </small>
+  <p class="mb-1">&copy; 2025 Kay Jewelers</p>
+  <p class="mb-2">Follow us</p>
+  <div>
+    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+      <img src="images/fb.png" alt="Facebook" width="32" height="32" style="margin-right: 10px;">
+    </a>
+    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+      <img src="images/insta.png" alt="Instagram" width="36" height="36">
+    </a>
   </div>
 </footer>
+
 
 <!-- Bootstrap Bundle JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

@@ -18,8 +18,7 @@
     <div class="collapse navbar-collapse" id="navMenu">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
-        
-        <!-- Dropdown for Collections -->
+      
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="collectionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Collections
@@ -71,30 +70,60 @@
   </div>
 </div>
 
-
-<!--Card-->
+<!-- Carousel images -->
 <div class="container mt-5">
-  <div class="card text-center border-0 shadow-lg">
-    <img src="images/jewel1.jpg" class="card-img-top" alt="Homepage Banner">
+  <div class="card border-0 shadow-sm text-center mx-auto" style="max-width: 1000px;">
+    
+    <div id="imageslide" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/jewel1.jpg" class="d-block w-100" alt="Jewelry 1" style="height: 800px; object-fit: cover;">
+        </div>
+        <div class="carousel-item">
+          <img src="images/model1.jpg" class="d-block w-100" alt="Model 1" style="height: 800px; object-fit: cover;">
+        </div>
+        <div class="carousel-item">
+          <img src="images/model2.jpg" class="d-block w-100" alt="Model 2" style="height: 800px; object-fit: cover;">
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#imageslide" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#imageslide" data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
     <div class="card-body">
-      <h3 class="card-title fw-bold">Welcome to Kay Jewelers</h3>
-      <p class="card-text lead">Discover timeless beauty with our handcrafted fine jewelry — designed to dazzle, made to last.</p>
-      <a href="collections.html" class="btn btn-primary btn-lg mt-2">Shop Now</a>
+      <h4 class="card-title fw-bold">Designed to Dazzle</h4>
+      <p class="card-text">
+        From radiant diamonds to elegant settings, each piece is thoughtfully designed to celebrate life’s most meaningful moments.
+      </p>
+      <a href="collections.html" class="btn btn-outline-dark">Explore Collection</a>
     </div>
   </div>
 </div>
 
 
-<!-- Footer -->
+<!--footer-->
 <footer class="bg-dark text-white text-center py-4 mt-5">
-  <div class="container">
-    <p class="mb-1">&copy; 2025 Kay Jewelers</p>
-    <small>
-      <a href="#" class="text-white text-decoration-none me-3">Soe Kaythi</a>
-      <a href="#" class="text-white text-decoration-none">ET-701, Project 2</a>
-    </small>
+  <p class="mb-1">&copy; 2025 Kay Jewelers</p>
+  <p class="mb-2">Follow us</p>
+  <div>
+    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+      <img src="images/fb.png" alt="Facebook" width="32" height="32" style="margin-right: 10px;">
+    </a>
+    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+      <img src="images/insta.png" alt="Instagram" width="36" height="36">
+    </a>
   </div>
 </footer>
+
+
+
 
 <!-- Bootstrap Bundle JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

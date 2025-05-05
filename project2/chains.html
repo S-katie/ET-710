@@ -75,7 +75,7 @@
 
 <!-- Product Cards -->
 <div class="container mt-5">
-  <h2 class="text-center mb-4">Featured Jewelry</h2>
+  <h2 class="text-center mb-4">Chains and Bracelets</h2>
   <div class="row row-cols-1 row-cols-md-4 g-4">
 
     <!-- Product 1 -->
@@ -85,7 +85,7 @@
         <div class="card-body text-center">
           <h5 class="card-title">Diamond Heart Bracelet</h5>
           <p class="card-text">14K Gold Double heart shaped bracelet.</p>
-          <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#earringsModal">
+          <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#heartBraceletModal">
             View Details
           </button>
         </div>
@@ -133,91 +133,169 @@
         </div>
       </div>
     </div>
-
   </div>
 </div>
 
 <!-- Modals Section -->
 
-<!-- Modal for Bracelet -->
-<div class="modal fade" id="earringsModal" tabindex="-1" aria-labelledby="earringsModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+<!-- Modal for Diamond Heart Bracelet -->
+<div class="modal fade" id="heartBraceletModal" tabindex="-1" aria-labelledby="heartBraceletModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="earringsModalLabel">Diamond Heart Bracelet Details</h5>
+        <h5 class="modal-title" id="heartBraceletModalLabel">Diamond Heart Bracelet Details</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body text-center">
-        <img src="images/heart_br1a.jpg" class="img-fluid mb-3" alt="heart bracelet">
-        <img src="images/heart_br1b.jpg" class="img-fluid mb-3" alt="heart bracelet">
-        <img src="images/heart_br1c.jpg" class="img-fluid mb-3" alt="heart bracelet">
-        <p>These elegant Heart shaped with SI color diamonds are beautifully set in 14K gold design, perfect for everyday wear and grace.</p>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6 text-center">
+            <img src="images/heart_br1a.jpg" class="img-fluid mb-3" alt="Heart Bracelet View 1">
+            <img src="images/heart_br1b.jpg" class="img-fluid mb-3" alt="Heart Bracelet View 2">
+          </div>
+          <div class="col-md-6">
+            <p><strong>Description:</strong></p>
+            <p>This romantic bracelet features interlocking double hearts crafted in 14K yellow gold, encrusted with sparkling SI-quality natural diamonds. A timeless symbol of love and elegance, ideal for meaningful gifts or cherished personal wear.</p>
+            <p class="mt-4"><strong>Select Gold Color:</strong></p>
+            <div class="d-grid gap-2 d-md-block mb-3">
+              <input type="radio" class="btn-check" name="goldColor" id="goldYellow" autocomplete="off">
+              <label class="btn btn-outline-dark me-2" for="goldYellow">Yellow Gold</label>
+              <input type="radio" class="btn-check" name="goldColor" id="goldWhite" autocomplete="off">
+              <label class="btn btn-outline-dark me-2" for="goldWhite">White Gold</label>
+            </div>
+            <p class="fw-bold fs-5 mt-3">$450.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Add to Cart</button>
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
 </div>
 
-<!-- Modal for Chains -->
+<!-- Modal for Gold Chains -->
 <div class="modal fade" id="chainsModal" tabindex="-1" aria-labelledby="chainsModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="chainsModalLabel">14K Gold Chains Details</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body text-center">
-        <img src="images/chain1a.jpg" class="img-fluid mb-3" alt="Gold Chains">
-        <img src="images/chain1b.jpg" class="card-img-top" alt="Gold Chains">
-        <img src="images/chain1c.jpg" class="card-img-top" alt="Gold Chains">
-        <p>Crafted from 14K gold, this 12-inch rope-style chain is a classic symbol of luxury, durability, and modern style.</p>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6 text-center">
+            <img src="images/chain1a.jpg" class="img-fluid mb-3" alt="Chain View 1">
+            <img src="images/chain1b.jpg" class="img-fluid mb-3" alt="Chain View 2">
+          </div>
+          <div class="col-md-6">
+            <p><strong>Description:</strong></p>
+            <p>Elegant 14K gold rope-style chain measuring 12 inches. Known for its durability and shine, this chain complements both casual and formal styles. Perfect for layering or wearing solo.</p>
+            <p class="mt-4"><strong>Select Gold Color:</strong></p>
+            <div class="d-grid gap-2 d-md-block mb-3">
+              <input type="radio" class="btn-check" name="goldColor" id="goldYellow" autocomplete="off">
+              <label class="btn btn-outline-dark me-2" for="goldYellow">Yellow Gold</label>
+              <input type="radio" class="btn-check" name="goldColor" id="goldWhite" autocomplete="off">
+              <label class="btn btn-outline-dark me-2" for="goldWhite">White Gold</label>
+            </div>
+            <p class="fw-bold fs-5 mt-3">$1099.00</p>
+          </div>  
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Add to Cart</button>
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
 </div>
 
-<!-- Modal for Necklace -->
+<!-- Modal for Gold Necklace -->
 <div class="modal fade" id="necklaceModal" tabindex="-1" aria-labelledby="necklaceModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="necklaceModalLabel">Gold Necklace Details</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body text-center">
-        <img src="images/necklace1.jpg" class="img-fluid mb-3" alt="Gold Necklace">
-        <p>Our 14K handcrafted Cuban link gold necklace offers strength and beauty, designed for those who value sophistication and quality.</p>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6 text-center">
+            <img src="images/necklace1.jpg" class="img-fluid mb-3" alt="Necklace View">
+          </div>
+          <div class="col-md-6">
+            <p><strong>Description:</strong></p>
+            <p>Bold and sophisticated, this handcrafted Cuban link chain is made from 14K solid gold. With its strong links and polished finish, this necklace makes a statement of luxury and strength, suited for both men and women.</p>
+            <p class="mt-4"><strong>Select Gold Color:</strong></p>
+            <div class="d-grid gap-2 d-md-block mb-3">
+              <input type="radio" class="btn-check" name="goldColor" id="goldYellow" autocomplete="off">
+              <label class="btn btn-outline-dark me-2" for="goldYellow">Yellow Gold</label>
+              <input type="radio" class="btn-check" name="goldColor" id="goldWhite" autocomplete="off">
+              <label class="btn btn-outline-dark me-2" for="goldWhite">White Gold</label>
+            </div>
+            <p class="fw-bold fs-5 mt-3">$1199.00</p>
+          </div> 
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Add to Cart</button>
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
 </div>
 
-<!-- Modal for Bracelet -->
+<!-- Modal for Pearl Bracelet -->
 <div class="modal fade" id="braceletModal" tabindex="-1" aria-labelledby="braceletModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="braceletModalLabel">Pearl Bracelet Details</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body text-center">
-        <img src="images/bracelet1.jpg" class="img-fluid mb-3" alt="Pearl Bracelet">
-        <p>This delicate pearl bracelet features south sea pearls and a 14K gold clasp, delivering timeless charm and modern elegance.</p>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6 text-center">
+            <img src="images/bracelet1.jpg" class="img-fluid mb-3" alt="Pearl Bracelet View">
+          </div>
+          <div class="col-md-6">
+            <p><strong>Description:</strong></p>
+            <p>This elegant bracelet showcases luminous South Sea pearls, hand-knotted on durable silk thread and finished with a 14K gold clasp. A timeless piece that adds grace and refinement to any jewelry collection—ideal for weddings, anniversaries, or classic style.</p>
+            <p class="mt-4"><strong>Select Gold Color:</strong></p>
+            <div class="d-grid gap-2 d-md-block mb-3">
+              <input type="radio" class="btn-check" name="goldColor" id="goldYellow" autocomplete="off">
+              <label class="btn btn-outline-dark me-2" for="goldYellow">Yellow Gold</label>
+              <input type="radio" class="btn-check" name="goldColor" id="goldWhite" autocomplete="off">
+              <label class="btn btn-outline-dark me-2" for="goldWhite">White Gold</label>
+            </div>
+            <p class="fw-bold fs-5 mt-3">$350.00</p>
+          </div> 
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Add to Cart</button>
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
 </div>
 
 
-<!-- Footer -->
+
+<!--footer-->
 <footer class="bg-dark text-white text-center py-4 mt-5">
-  <div class="container">
-    <p class="mb-1">&copy; 2025 Kay Jewelers</p>
-    <small>
-      <a href="#" class="text-white text-decoration-none me-3">Soe Kaythi</a>
-      <a href="#" class="text-white text-decoration-none">ET-701, Project 2</a>
-    </small>
+  <p class="mb-1">&copy; 2025 Kay Jewelers</p>
+  <p class="mb-2">Follow us</p>
+  <div>
+    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+      <img src="images/fb.png" alt="Facebook" width="32" height="32" style="margin-right: 10px;">
+    </a>
+    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+      <img src="images/insta.png" alt="Instagram" width="36" height="36">
+    </a>
   </div>
 </footer>
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
